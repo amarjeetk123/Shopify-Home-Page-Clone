@@ -20,7 +20,9 @@
       '2xl': '1536px',
       'brwidth':'810px',
       'get':'1310px',
-      'nav':'1180px'
+      'nav':'1180px',
+      'last':'460px',
+      'foot':'750px'
           }
           ,
         extend: {
@@ -30,13 +32,14 @@
             buttoncolor:"#008060",
             blackgreen:"#003427",
             crem:"#fbfced"
+          
           }
         }
       }
     }
   </script>
   <style>
-    @media screen and (max-width:1180px) {
+    @media screen and (min-width:0px) {
       .list{
             
           
@@ -55,7 +58,7 @@
 <body>
 
   <nav class="bg-crem py-8 fixed  w-full ">
-    <div class="w-[90%] mx-auto flex justify-between">
+    <div class="w-[90%] mx-auto flex flex-col last:flex-row justify-between ">
       <div class="flex items-center">
         <img class="w-12" src="./title-logo.png" alt="">
         <h1 class="font-bold text-3xl">shopify</h1>
@@ -72,19 +75,17 @@
           <li><a href="#" class="text-2xl text-gray-600 hover:text-black">Learn <i class="fa-solid fa-caret-down -ml-1"></i></a></li>
           <li><a href="#" class="text-2xl text-gray-600 hover:text-darkgreen">Log in <i class="fa-solid fa-caret-down -ml-1"></i></a></li>
         </ul>
-        <button class="inline-flex text-white bg-buttoncolor border-0 py-2 px-6 ml-4 focus:outline-none hover:bg-blackgreen transition duration-600 rounded text-lg">Try for free</button>
-      </div>
-
-      
+        <button class="inline-flex text-white bg-buttoncolor border-0 py-2 px-6 last:ml-4 mx-auto focus:outline-none hover:bg-blackgreen transition duration-600 rounded text-lg last:mr-10 nav:mr-0 mt-4 last:mt-0">Try for free</button>
+      </div>  
     </div>
   </nav>
   
- <!-- other nav foe three line button  -->
-  <nav class="w-full  mt-2 absolute nav:hidden top-24   second-nav">
+ <!-- other nav for three line button  -->
+  <nav class="w-full  mt-2 absolute top-24   second-nav ">
    
       <input type="checkbox" name="" id="check" class="hidden absolute" >
     <label for="check">
-      <i class="fas fa-bars fa-3x nav:hidden absolute -mt-[70px] mr-2 right-0"></i>
+      <i class="fas fa-bars fa-3x  fixed -mt-[70px] right-6"></i>
     </label>
    
 
@@ -150,8 +151,8 @@
             </div>
             <h1 class="mt-8">Try Shopify free for 14 days, no credit card required. By entering your email, you agree to receive marketing <br/> emails from Shopify.</h1>
           </div>
-          <div class="lg:max-w-lg lg:w-full md:w-3/4 w-5/6 bg-red-600">
-            <img src="images/in-hero-product-small-0c64c4c1013fc8ac477cb5ff62bf5b56b2903aec697e6b708b90d3b65a09baf8.jpg" alt="">
+          <div class="lg:max-w-lg lg:w-full md:w-3/4 w-5/6">
+            <img src="images/in-hero-product-small-0c64c4c1013fc8ac477cb5ff62bf5b56b2903aec697e6b708b90d3b65a09baf8.png" alt="">
           </div>
           
         </div>
@@ -161,11 +162,11 @@
       <section class="w-full  bg-darkgreen px-10 py-20 text-white">
 
         <h1 class="text-4xl">Bring your business online</h1>
-        <div class="flex justify-between pr-16  mt-8">
-            <h1 class="w-[50%]">Create an ecommerce website backed by powerful tools that help you find customers, drive sales, and manage your day-to-day.</h1>
+        <div class="flex flex-col sm:flex-row justify-between pr-16  mt-8">
+            <h1 class="w-[80%] sm:w-[50%]">Create an ecommerce website backed by powerful tools that help you find customers, drive sales, and manage your day-to-day.</h1>
             <a href="#" class="flex hover:-translate-y-1 transition duration-600 items-center  ">
-              <h1 class=" font-bold">Explore more examples</h1>
-              <svg  fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-5 mt-2 ml-1 " viewBox="0 0 24 24" >
+              <h1 class=" font-bold mt-4 sm:mt-0">Explore more examples</h1>
+              <svg  fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-5 mt-6 sm:mt-2 ml-1 " viewBox="0 0 24 24" >
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
             </a>
@@ -337,12 +338,13 @@
       </div>
     </div>
   </section>
-
+ 
+  <!-- get the help you need  -->
   <div class="w-full  bg-crem flex flex-col lg:flex-row">
-      <div class="w-[50%] mx-auto py-20" >
+      <div class="w-[50%] w-[80%] mx-auto py-20" >
         <h1 class=" text-4xl md:text-6xl font-semibold text-center">Get the help you need, <br class="hidden get:inline" /> every step of the way</h1>
         <div class="md:flex flex-wrap justify-center mt-16" >
-            <div class="md:w-[45%]" >
+            <div class="lg:w-[45%]   " >
               <h1 class="text-2xl font-semibold ">Shopify support</h1>
               <h1 class="my-1 text-xl text-gray-500 w-[80%]" >Contact support 24/7, whether you’re troubleshooting issues or looking for business advice.</h1>
               <a href="#"  class="flex   hover:gap-1 transition duration-600 items-center text-buttoncolor font-semibold l:text-xl">
@@ -352,7 +354,7 @@
                 </svg>
               </a>
             </div>
-            <div class="md:w-[45%] mt-8 md:mt-0 " >
+            <div class="lg:w-[45%] mt-8 lg:mt-0 " >
               <h1 class="text-2xl font-semibold ">Shopify App Store</h1>
               <h1 class="my-1 text-xl text-gray-500 w-[80%]" >Add features and functionality to your business with 6,000+ apps that integrate directly with Shopify.</h1>
               <a href="#"  class="flex   hover:gap-1 transition duration-600 items-center text-buttoncolor font-semibold l:text-xl">
@@ -362,7 +364,7 @@
                 </svg>
               </a>
             </div>
-            <div class="md:w-[40%] mt-4" >
+            <div class="lg:w-[40%] lg:mt-4 mt-8" >
               <h1 class="text-2xl font-semibold ">Shopify Experts Marketplace</h1>
               <h1 class="my-1 text-xl text-gray-500 " >Hire a Shopify expert to help you with everything from store setup to SEO.</h1>
               <a href="#"  class="flex   hover:gap-1 transition duration-600 items-center text-buttoncolor font-semibold l:text-xl">
@@ -374,7 +376,7 @@
             </div>
         </div>
       </div>
-      <img class="md:w-[50%]" src="images/help@desktop-9a31a38edab7cba3389c5d71eccb81ab32d24e0eeb40c8eac3568d98bc179e1e.jpg" alt="">
+      <img class="lg:w-[50%] w-full" src="images/help@desktop-9a31a38edab7cba3389c5d71eccb81ab32d24e0eeb40c8eac3568d98bc179e1e.jpg" alt="">
   </div>
 
   <!-- Start your business journey with Shopify  -->
@@ -385,9 +387,9 @@
   </div>
 
  <!-- move on top  -->
-  <div class="w-[95%] flex justify-end py-4" >
+  <div class="w-[95%]  flex justify-end py-4" >
     <a href="http://127.0.0.1:5500/index.html"  class="flex  hover:-translate-y-1 transition duration-600 items-center text-buttoncolor font-semibold text-2xl">
-      <h1>Visit the Shopify App Store  </h1>
+      <h1>move on top </h1>
       <svg  fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class=" w-8  h-12 h-10 mt-1 ml-2  -rotate-90" viewBox="0 0 24 24" >
       <path d="M5 12h14M12 5l7 7-7 7"></path>
       </svg>
@@ -395,15 +397,15 @@
   </div>
 
   <!-- fotter start  -->
-  <footer class="w-full bg-blackgreen pt-20 pb-10 " >
+  <footer class="w-full bg-blackgreen pt-20 pb-10  " >
 
     <div class="w-[90%] mx-auto">
-      <ul class="flex gap-6 text-2xl text-white" >
+      <ul class="foot:flex gap-6 text-2xl text-white grid grid-cols-2 " >
         <li><a href="#">About</a></li>
         <li><a href="#">Careers</a></li>
         <li><a href="#"> Press and Media</a></li>
         <li><a href="#"> Shopify Plus </a></li>
-        <li><a href="#"> Sitemap</a></li>
+        <li class=""><a href="#"> Sitemap</a></li>
       </ul>
       
        <!-- adding a line  -->
