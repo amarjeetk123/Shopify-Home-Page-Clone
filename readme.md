@@ -1,15 +1,13 @@
-# Shopify Home Page Clone-Project-2-Tailwind CSS
-
-![](https://img.shields.io/badge/Project-02-red)
-![](https://img.shields.io/badge/HTML-5-orange)
-![](https://img.shields.io/badge/Tailwind-CSS-blue)
+# Shopify Home Page Clone
+![](https://img.shields.io/badge/iNeuron-orange)
+![](https://img.shields.io/badge/Hitesh%20Chaoudhry-LCO-g)
 
 ## I have created home page clone of Shopify website using HTML and Tailwind.
 
 
 ### My Website is Fully Responsive , you can view in mobile , tab or desktop.
 
-[Live Deployed Link Of my Project]()
+Live Link:-[Click Here!]()
 
 ![Picture of my Project ](./images/web-page.jpg)
 
