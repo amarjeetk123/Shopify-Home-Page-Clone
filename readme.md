@@ -11,7 +11,7 @@
 
 ### My Website is Fully Responsive , you can view in mobile , tab or desktop.
 
-[Live Deployed Link Of my Project]()
+Live Link:-[Click Here](https://shopify-home-page-clone.netlify.app/)
 
 ![Picture of my Project ](./images/web-page.jpg)
 
