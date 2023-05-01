@@ -15,7 +15,6 @@ Live Link:-[Click Here](https://shopify-home-page-clone.netlify.app/)
 
 ![Picture of my Project ](./images/web-page.jpg)
 
-
 ### For making this web page responsive mostly I used flex box and grid.
 
 ### It took approx 8 hours to completed.
