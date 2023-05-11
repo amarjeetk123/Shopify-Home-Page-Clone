@@ -13,6 +13,9 @@
 Live Link:-[Click Here](https://shopify-home-page-clone.netlify.app/)
 
 ![Picture of my Project ](./images/web-page.jpg)
+![Picture of my Project ](./images/first.png)
+![Picture of my Project ](./images/second.png)
+![Picture of my Project ](./images/third.png)
 
 ### For making this web page responsive mostly I used flex box and grid.
 
